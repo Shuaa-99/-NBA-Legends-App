@@ -1,12 +1,37 @@
-# React + Vite
+# 🏀 NBA Legends App
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A simple React application to browse and sort a list of NBA players based on various statistics like points, rebounds, assists, and All-Star appearances.
 
-Currently, two official plugins are available:
+## 🚀 Features
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+- 🔍 **Search**: Filter players by name using the search bar.
+- 📊 **Sorting**: Sort the player list by Points, Rebounds, Assists, or All-Star appearances.
+- 📦 **Modular components**: Clean separation using components like `PlayerCard`, `SearchBar`, and `CardContainer`.
 
-## Expanding the ESLint configuration
+## 🖼️ Data & Images
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+- Player data and image URLs are imported from a local file:  
+  `src/helper/data.js`
+- Images are hosted via external URLs (e.g., `https://randomuser.me/api/...` or similar).
+
+## 📁 Project Structure
+```
+NBA-Legends/
+├── src/
+│ ├── assets/ # NBA logo and other static assets
+│ ├── components/
+│ │ ├── CardContainer.jsx
+│ │ ├── PlayerCard.jsx
+│ │ ├── SearchBar.jsx
+│ │ └── CardContainer.scss
+│ ├── helper/
+│ │ └── data.js # Player data
+│ └── App.js
+└── README.md
+```
+##  Built With
+
+- React 
+- Bootstrap 5 (React-Bootstrap)
+- Material UI (Search field)
+- SCSS
